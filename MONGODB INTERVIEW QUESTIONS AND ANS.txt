@@ -1,0 +1,176 @@
+MONGODB INTERVIEW QUESTIONS AND ANSWERS
+==============================================
+
+1. What is MongoDB?
+MongoDB is a NoSQL, document-oriented database developed by MongoDB Inc. that stores data in BSON format.
+
+2. Is MongoDB SQL or NoSQL?
+MongoDB is a NoSQL database.
+
+3. What is a Document in MongoDB?
+A document is a single record stored in BSON format (similar to JSON).
+
+4. What is a Collection?
+A collection is a group of documents (similar to a table in SQL).
+
+5. What is a Database?
+A database contains collections.
+
+6. Difference between SQL and MongoDB?
+
+SQL:
+- Tables
+- Rows
+- Fixed schema
+
+MongoDB:
+- Collections
+- Documents
+- Flexible schema
+
+7. What is BSON?
+BSON (Binary JSON) is the internal storage format used by MongoDB.
+
+8. What is _id?
+_id is a unique identifier automatically created for every document.
+
+9. What are CRUD operations?
+Create, Read, Update, Delete.
+
+10. How do you insert data in MongoDB?
+insertOne() and insertMany()
+
+11. How do you read data?
+find() and findOne()
+
+12. How do you update data?
+updateOne(), updateMany(), replaceOne()
+
+13. How do you delete data?
+deleteOne() and deleteMany()
+
+14. What is indexing?
+Indexing improves query performance.
+
+15. What is aggregation?
+Aggregation processes data using pipeline stages like $match, $group.
+
+16. What is a Replica Set?
+A replica set provides high availability using multiple copies of data.
+
+17. What is Sharding?
+Sharding distributes data across multiple servers.
+
+18. What is Mongoose?
+Mongoose is an ODM library for Node.js to interact with MongoDB.
+
+19. What is Schema in MongoDB?
+MongoDB is schema-less, but Mongoose allows schema definitions.
+
+20. What is ObjectId?
+ObjectId is a 12-byte unique identifier used as default _id.
+
+21. What is Embedded Document?
+A document stored inside another document.
+
+22. What is Reference?
+Using IDs to create relationships between collections.
+
+23. Embedded vs Referenced?
+
+Embedded:
+- Faster reads
+- Data duplication
+
+Referenced:
+- Normalized
+- Better for large data
+
+24. What is Projection?
+Selecting specific fields in query results.
+
+25. What is Cursor?
+Cursor points to query result set.
+
+26. What is $set?
+Updates specific fields.
+
+27. What is $push?
+Adds elements to an array field.
+
+28. What is upsert?
+Insert if not exists, otherwise update.
+
+29. What is TTL Index?
+Automatically deletes documents after a set time.
+
+30. When should MongoDB be used?
+- Big data
+- Real-time apps
+- Flexible schema
+- High scalability
+
+------------------------------
+ADVANCED 20 QUESTIONS
+------------------------------
+
+31. What is Aggregation Pipeline?
+A framework to process data in stages like $match, $group, $sort.
+
+32. What is $lookup?
+Used to perform left outer join between collections.
+
+33. What is $group?
+Groups documents by specified fields.
+
+34. What is $match?
+Filters documents (like WHERE in SQL).
+
+35. What is $unwind?
+Deconstructs array fields into multiple documents.
+
+36. What is Compound Index?
+Index created on multiple fields.
+
+37. What is Covered Query?
+Query that can be satisfied entirely using an index.
+
+38. What is Write Concern?
+Specifies acknowledgment level for write operations.
+
+39. What is Read Concern?
+Controls consistency and isolation of read operations.
+
+40. What is Capped Collection?
+Fixed-size collection that automatically overwrites old data.
+
+41. What is explain()?
+Used to analyze query performance.
+
+42. What is $project?
+Reshapes documents in aggregation pipeline.
+
+43. What is $limit?
+Limits number of documents returned.
+
+44. What is $skip?
+Skips specified number of documents.
+
+45. What is Horizontal Scaling?
+Scaling by adding more servers (Sharding).
+
+46. What is Vertical Scaling?
+Scaling by increasing server resources (RAM/CPU).
+
+47. What is Data Modeling in MongoDB?
+Designing document structure for performance and scalability.
+
+48. What are Transactions in MongoDB?
+Allows multiple operations to execute atomically.
+
+49. What is Atlas?
+MongoDB Atlas is the cloud database service provided by MongoDB.
+
+50. What are Change Streams?
+Feature to listen to real-time data changes.
+
